@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:webflow-config="http://www.springframework.org/schema/webflow-config"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.xsd">
+    <bean name="/*" class="org.springframework.webflow.mvc.servlet.FlowController">
+            <property name="flowExecutor" ref="flowExecutor2"/>
+    </bean>
+    <!--<webflow-config:flow-registry id="flowRegistry" >
+        <webflow-config:flow-location path="WEB-INF/flows/f1/flow1.xml" />
+        <webflow-config:flow-location path="WEB-INF/flows/f3/flow3.xml"/>
+    </webflow-config:flow-registry>-->
+    
+    <webflow-config:flow-executor id="flowExecutor2" flow-registry="flowRegistry"/>
+    
+    <webflow-config:flow-registry id="flowRegistry" base-path="/WEB-INF/flows">
+        <webflow-config:flow-location-pattern value="/*.xml"/>
+    </webflow-config:flow-registry>
+</beans>

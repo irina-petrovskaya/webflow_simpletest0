@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow parent="flow3" xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+    <var name="foo" class="sss.Foo"/>
+    <view-state id="flow1" view="flow1.jsp">
+           <on-entry>
+               <evaluate expression="foo.returnGreeting('world')" result="flowScope.hello"/>
+           </on-entry>
+          <transition to="a1" on="log" />
+           
+      </view-state>
+         
+       <action-state id="a1" parent="flow3#a1"/>
+</flow>
