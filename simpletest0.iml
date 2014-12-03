@@ -31,5 +31,7 @@
     <orderEntry type="library" name="spring-webflow-2.3.1" level="application" />
     <orderEntry type="library" name="Spring3.1" level="application" />
     <orderEntry type="library" name="SpringCommonLibrary" level="application" />
+    <orderEntry type="library" name="Spring-4.1.2.RELEASE" level="application" />
+    <orderEntry type="library" name="Spring Webflow-2.4.0" level="application" />
   </component>
 </module>
