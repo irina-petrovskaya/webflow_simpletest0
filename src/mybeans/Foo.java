@@ -1,4 +1,4 @@
-package sss;
+package mybeans;
 
 import java.io.Serializable;
 

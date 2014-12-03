@@ -2,7 +2,7 @@
 <flow parent="flow3" xmlns="http://www.springframework.org/schema/webflow"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
-    <var name="foo" class="sss.Foo"/>
+    <var name="foo" class="mybeans.Foo"/>
     <view-state id="flow1" view="flow1.jsp">
            <on-entry>
                <evaluate expression="foo.returnGreeting('world')" result="flowScope.hello"/>

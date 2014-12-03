@@ -1,4 +1,4 @@
-package sss;
+package mybeans;
 
 import org.springframework.stereotype.Component;
 
